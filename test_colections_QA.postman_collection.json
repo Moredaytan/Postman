@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "de00b349-69fc-447c-8390-a8be06b91d44",
+		"name": "test_colections_QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20723547"
+	},
+	"item": [
+		{
+			"name": "3.1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "candidate",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://moscom3.comfortsoft.ru/bas/v1/dict-data/interview",
+					"protocol": "https",
+					"host": [
+						"moscom3",
+						"comfortsoft",
+						"ru"
+					],
+					"path": [
+						"bas",
+						"v1",
+						"dict-data",
+						"interview"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.3",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "candidate",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n            \"fio\": \"Помазков Алексей Николаевич\",\r\n            \"name\": \"PAN\",\r\n            \"comment\": \"Какой то важный текст - отображен тут\"\r\n          \r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://moscom3.comfortsoft.ru/bas/v1/dict-data/interview",
+					"protocol": "https",
+					"host": [
+						"moscom3",
+						"comfortsoft",
+						"ru"
+					],
+					"path": [
+						"bas",
+						"v1",
+						"dict-data",
+						"interview"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "candidate",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n            \"fio\": \"Помазков Алексей Николаевич\",\r\n            \"name\": \"PAN\",\r\n            \"comment\": \"Какой то важный текст - отображен тут\"\r\n          \r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://moscom3.comfortsoft.ru/bas/v1/dict-data/interview?fio=Помазков Алексей Николаевич",
+					"protocol": "https",
+					"host": [
+						"moscom3",
+						"comfortsoft",
+						"ru"
+					],
+					"path": [
+						"bas",
+						"v1",
+						"dict-data",
+						"interview"
+					],
+					"query": [
+						{
+							"key": "fio",
+							"value": "Помазков Алексей Николаевич"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "candidate",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://moscom3.comfortsoft.ru/bas/v1/dict-data/interview?descendants=true&sort=name&page=0&pageSize=10&filter=confirmStatus%3DNO&sort=fio&direction=asc",
+					"protocol": "https",
+					"host": [
+						"moscom3",
+						"comfortsoft",
+						"ru"
+					],
+					"path": [
+						"bas",
+						"v1",
+						"dict-data",
+						"interview"
+					],
+					"query": [
+						{
+							"key": "descendants",
+							"value": "true"
+						},
+						{
+							"key": "sort",
+							"value": "name"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						},
+						{
+							"key": "filter",
+							"value": "confirmStatus%3DNO"
+						},
+						{
+							"key": "sort",
+							"value": "fio"
+						},
+						{
+							"key": "direction",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
