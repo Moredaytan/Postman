@@ -1,2 +1,2 @@
 # Postman 
-request and collection
+requests and collection.
